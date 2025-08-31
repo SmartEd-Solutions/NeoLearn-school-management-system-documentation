@@ -19,6 +19,7 @@ _A smart, scalable solution for managing school operations with AI-powered insig
 - [Screenshots](#screenshots)
 - [Setup Instructions](#setup-instructions)
 - [Future Improvements](#future-improvements)
+- [Project Repositories](#project-repositories)
 - [Team](#team)
 
 ---
@@ -36,11 +37,10 @@ This system is built to **improve efficiency and accessibility** in schools, ali
 
 ## 🔑 Features
 - **User Management**: Admin, Teacher, Student roles with login functionality.
-- **Timetable Management**: Create, view, and edit class schedules.
-- **Attendance Tracking**: Teachers can mark daily attendance.
-- **Performance Tracking**: Record and view exam scores.
-- **AI Query Engine**:
-  - Natural-language questions for instant insights.
+- **Timetable Management**: Create, view, manage, and optimize class schedules.
+- **Attendance Tracking**: Teachers can mark daily attendance with real-time notifications and comprehensive reporting for teachers and parents.
+- **Performance Analytics**: Track student progress with detailed analytics, grade management, and personalized learning insights.
+- **AI Query Engine**: Natural language queries to analyze school data and get actionable recommendations for improved outcomes.
   - Examples:
     - “Who is absent today?”
     - “When is the next Science class?”
@@ -50,16 +50,41 @@ This system is built to **improve efficiency and accessibility** in schools, ali
 
 ## 🏗 Architecture
 
+                  +----------------------+
+                  |   User Interface     |
+                  |      (Frontend)      |
+                  +----------+-----------+
+                             |
+                             v
+                  +----------------------+
+                  | Application Logic    |
+                  |      (Backend)       |
+                  +----------+-----------+
+                             |
+      +----------------------+-----------------------+
+      |                      |                       |
+      v                      v                       v
++-------------+     +------------------+     +----------------------+
+|   Database  |     | AI Query Engine  |     | Authentication &     |
+|    Layer    |     |  (NLP + Reports) |     |     Security         |
++-------------+     +------------------+     +----------------------+
+
+                             |
+                             v
+                  +----------------------+
+                  | Deployment &         |
+                  | Infrastructure       |
+                  +----------------------+
+
 ---
 
 ## ⚙️ Tech Stack
-- **Frontend**: 
+- **Frontend**: HTML5, CSS3, JavaScript, React
 - **Backend**: Python (flask)
 - **Database**: MySQL
-- **AI**: 
+- **AI Integration**: Hugging Face API (Language Model for Natural-Language Queries)
+- **Development Tools**: Lovable
 - **Hosting**:
-- **Pitch**:
-  
 
 ---
 
@@ -91,17 +116,13 @@ STILL WORKING ON ARRANGING THE PROMPTS
 ---
 
 ## 🗄 Database Structure
-| Table       | Columns                                         |
-|-------------|-------------------------------------------------|
-| Users       | id, name, role, email, password                |
-| Roles       | id, role_name (Admin, Teacher, Student)        |
-| Students    | id, user_id, class, enrollment_date            |
-| Teachers    | id, user_id, subjects                          |
-| Subjects    | id, name                                       |
-| Classes     | id, name, teacher_id                           |
-| Schedule    | id, class_id, subject_id, teacher_id, day, time|
-| Attendance  | id, student_id, date, status                  |
-| Performance | id, student_id, subject_id, score, exam_date  |
+| Table       | Columns                                                              |
+|-------------|----------------------------------------------------------------------|
+| Student     | id, first_name, last_name, class, roll_no                            |
+| Teacher     | id, first_name, last_name, subject                                   |
+| timetables  | id, class, day_of_week, start_time, end_time, subject, teacher_id    |
+| attendance  | id, student_id, status, note                                         |
+| Performance | id, student_id, subject, term, score, max_score                      |
 
 ---
 
@@ -134,7 +155,7 @@ http://127.0.0.1:5000/
 
 ---
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 
 Advanced analytics dashboards.
 
@@ -147,15 +168,22 @@ Mobile app version.
 
 ---
 
-👨‍💻 Team
+## 🔗 Project Repositories
+- [Frontend Repository] (https://github.com/SmartEd-Solutions/backend.git)
+- [Backend Repository] (https://github.com/SmartEd-Solutions/NeoLearn-Frontend.git)
+- [API Repository] (https://github.com/SmartEd-Solutions/API.git)
+
+---
+
+## 👨‍💻 Team
 
 [Teammate 1] – AI Integration
 
-[Teammate 2] – Backend Developer
+[Teammate 2] – Backend Developer & Database
 
 [Teammate 3] – Frontend Developer
 
-[Teammate 4] – Database & Testing
+[Teammate 4] – Testing
 
 [Eunice Ohilebo] – Documentation & Pitch
 
