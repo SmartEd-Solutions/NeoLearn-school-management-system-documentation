@@ -50,31 +50,35 @@ This system is built to **improve efficiency and accessibility** in schools, ali
 
 ## 🏗 Architecture
 
-                  +----------------------+
-                  |   User Interface     |
-                  |      (Frontend)      |
-                  +----------+-----------+
-                             |
-                             v
-                  +----------------------+
-                  | Application Logic    |
-                  |      (Backend)       |
-                  +----------+-----------+
-                             |
-      +----------------------+-----------------------+
-      |                      |                       |
-      v                      v                       v
-+-------------+     +------------------+     +----------------------+
-|   Database  |     | AI Query Engine  |     | Authentication &     |
-|    Layer    |     |  (NLP + Reports) |     |     Security         |
-+-------------+     +------------------+     +----------------------+
-
-                             |
-                             v
-                  +----------------------+
-                  | Deployment &         |
-                  | Infrastructure       |
-                  +----------------------+
++----------------------+
+|   User Interface     |
+|      (Frontend)      |
++----------+-----------+
+           |
+           v
++----------------------+
+| Application Logic    |
+|      (Backend)       |
++----------+-----------+
+     |    |    |
+     |    |    |
+     v    v    v
++---------+    +------------------+
+|Database |    | AI Query Engine  |
+|  Layer  |    | (NLP + Reports)  |
++---------+    +------------------+
+     |
+     v
++----------------------+
+| Authentication &     |
+|     Security         |
++----------------------+
+           |
+           v
++----------------------+
+| Deployment &         |
+| Infrastructure       |
++----------------------+
 
 ---
 
@@ -84,7 +88,8 @@ This system is built to **improve efficiency and accessibility** in schools, ali
 - **Database**: MySQL
 - **AI Integration**: Hugging Face API (Language Model for Natural-Language Queries)
 - **Development Tools**: Lovable
-- **Hosting**:
+- **Hosting**: bolt.new
+- **Monetization**: IntaSend
 
 ---
 
@@ -118,6 +123,7 @@ STILL WORKING ON ARRANGING THE PROMPTS
 ## 🗄 Database Structure
 | Table       | Columns                                                              |
 |-------------|----------------------------------------------------------------------|
+| Users       | id, name, role, email, password                                      |
 | Student     | id, first_name, last_name, class, roll_no                            |
 | Teacher     | id, first_name, last_name, subject                                   |
 | timetables  | id, class, day_of_week, start_time, end_time, subject, teacher_id    |
@@ -169,19 +175,19 @@ Mobile app version.
 ---
 
 ## 🔗 Project Repositories
-- [Frontend Repository] (https://github.com/SmartEd-Solutions/backend.git)
-- [Backend Repository] (https://github.com/SmartEd-Solutions/NeoLearn-Frontend.git)
-- [API Repository] (https://github.com/SmartEd-Solutions/API.git)
+- [Frontend Repository](https://github.com/SmartEd-Solutions/backend.git)
+- [Backend Repository](https://github.com/SmartEd-Solutions/NeoLearn-Frontend.git)
+- [API Repository](https://github.com/SmartEd-Solutions/API.git)
 
 ---
 
 ## 👨‍💻 Team
 
-[Teammate 1] – AI Integration
+[Teammate 1] – Frontend Developer
 
-[Teammate 2] – Backend Developer & Database
+[Obuye Emmanuel chukwuemeke] – Backend Developer & Database
 
-[Teammate 3] – Frontend Developer
+[Eunice Fagbemide] – AI Integration
 
 [Teammate 4] – Testing
 
