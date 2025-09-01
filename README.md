@@ -50,18 +50,32 @@ This system is built to **improve efficiency and accessibility** in schools, ali
 
 ## 🏗 Architecture
 
-System
-└─ UI (Frontend)
-   └─ Backend (API)
-      ├─ Core Services
-      │  ├─ Users
-      │  ├─ Timetables
-      │  ├─ Attendance
-      │  └─ Performance
-      ├─ AI Query Engine
-      ├─ Auth & Security
-      ├─ Database
-      └─ Deployment & Ops
+```text
+                  +----------------------+
+                  |   User Interface     |
+                  |      (Frontend)      |
+                  +----------+-----------+
+                             |
+                             v
+                  +----------------------+
+                  | Application Logic    |
+                  |      (Backend)       |
+                  +----------+-----------+
+                             |
+      +----------------------+-----------------------+
+      |                      |                       |
+      v                      v                       v
++-------------+     +------------------+     +----------------------+
+|   Database  |     | AI Query Engine  |     | Authentication &     |
+|    Layer    |     |  (NLP + Reports) |     |     Security         |
++-------------+     +------------------+     +----------------------+
+
+                             |
+                             v
+                  +----------------------+
+                  | Deployment &         |
+                  | Infrastructure       |
+                  +----------------------+
 
 
 ---
