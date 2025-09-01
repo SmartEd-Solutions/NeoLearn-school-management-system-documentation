@@ -77,7 +77,7 @@ This system is built to **improve efficiency and accessibility** in schools, ali
                   | Infrastructure       |
                   +----------------------+
 
-
+```
 ---
 
 ## ⚙️ Tech Stack
