@@ -182,9 +182,9 @@ By iterating prompts, we improved the generated output until it matched our desi
 
 ## 🖼 Screenshots
 *(Add screenshots of the UI here after development.)*
-![Landing Page](./images/login page.png)
-- Dashboard
-- AI Query Box
+![Login Page](./images/login-page.png)
+![Dashboard](./screenshots/dashboard.png)
+![AI Query Box](./screenshots/ai-query.png)
 
 ---
 
