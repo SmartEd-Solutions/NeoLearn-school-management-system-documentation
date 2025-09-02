@@ -260,13 +260,13 @@ Mobile app version.
 
 ## 👨‍💻 Team
 
-[Teammate 1] – Frontend Developer
+[Brian Ali] – Frontend Developer
 
 [Obuye Emmanuel chukwuemeke] – Backend Developer & Database
 
 [Eunice Fagbemide] – AI Integration
 
-[Teammate 4] – Testing
+[Cecilia Thuo] – Testing
 
 [Eunice Ohilebo] – Documentation & Pitch
 
