@@ -233,7 +233,7 @@ http://localhost:3000/
 
 ### 🌐 Live Demo
 
-[Click here to view the deployed app](your-live-app-url)
+[Click here to view the deployed app](https://smarted-solutions-ne-kyas.bolt.host/)
 
 
 ---
